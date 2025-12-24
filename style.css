@@ -6,35 +6,39 @@
 }
 
 body {
-    background-image: linear-gradient(180deg, (#000000), #1944BE);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), #1944BE);
     font-family: var(--fonte-primaria);
     height: 100vh;
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .externo {
-    background-color: rgba(24,24,26,0.95);
+    background-color: rgba(129, 129, 129, 0.2);
     width: min(1200px, 92%);
-    border-radius: 2.5em;
-    padding: 2.2rem;
+    border-radius: 2em;
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
 
 .interno {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    background-color: #2C2E30;
+    background-color: rgba(130, 130, 130, 0.1);
     border-radius: 1.8rem;
     gap: 1.2rem;
     width: 100%;
@@ -69,8 +73,8 @@ body {
 }
 
 .cadastro {
-    background: linear-gradient(180deg,#071033 0%, #071a34 100%);
-    width: 45%;
+    background-color: #000000;
+    width: 50%;
     border-radius: 1.4rem;
     display: flex;
     align-items: center;
@@ -79,8 +83,8 @@ body {
 
 .btn-submit {
     color: white;
-    width: 16em;
-    height: 2.2em;
+    width: 22vw;
+    height: 5vh;
     border-radius: 2em;
     background-color: #1944BE;
 }
