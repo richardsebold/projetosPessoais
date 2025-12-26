@@ -6,34 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script hrf="main.js" defer></script>
   <title>Tela de login</title>
 </head>
-
 <body>
   <main class="container">
     <div class="externo">
       <div class="interno">
         <section class="login">
           <div class="section-header">
-            <h1 class="pergunta">Ja estuda com a gente?</h1>
-            <p>Faça seu login e boa aula!</p>
+            <h1 class="titulo">Ja possui conta?</h1>
+            <p>Faça seu login!</p>
           </div>
+
           <form action="" class="formulario">
-            <div>
-              <input class="form-input" type="email" placeholder="Digite seu email" required />
+
+            <div class="input-box">
+              <label for="">
+                <span class="label-descricao">E-mail</span>
+                <input type="email" placeholder="Seu E-mail" required />
+              </label>
+              <i class="bx bxs-user"></i>
             </div>
-            <input class="form-input" type="password" placeholder="Digite sua senha" required />
+
+            <div class="input-box">
+              <label for="">
+                <span class="label-descricao">Senha</span>
+                <input type="password" placeholder="*********" required />
+              </label>
+              <i class="bx bxs-lock-alt"></i>
+            </div>
+
             <button class="btn-submit" type="submit">
               <strong class="btn-entrar">ENTRAR</strong>
             </button>
-            <a href="#">
+
+            <button class="btn-google">
+              <strong class="btn-entrar">LOGAR COM GOOGLE</strong>
+            </button>
+
+            <a class="forgot-password" href="#">
               <p>PRIMEIRO ACESSO/ESQUECI MINHA SENHA</p>
-            </a>  
+            </a>
+
           </form>
         </section>
         <section class="cadastro">
-
+          <h2>Ainda nao possui cadastro?</h2>
         </section>
       </div>
     </div>

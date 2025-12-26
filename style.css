@@ -8,8 +8,9 @@
 body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), #1944BE);
     font-family: var(--fonte-primaria);
-    height: 100vh;
+    min-height: 100vh;
 }
+
 
 .container {
     position: absolute;
@@ -17,16 +18,19 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 55vw;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .externo {
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     background-color: rgba(129, 129, 129, 0.2);
     width: min(1200px, 92%);
-    border-radius: 2em;
+    border-radius: 1em;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -43,13 +47,28 @@ body {
     gap: 1.2rem;
     width: 100%;
     height: 75vh;
-    padding: 1rem;
+    padding: 0.7em;
     overflow: hidden;
 }
 
 .logo {
     color: white;
     text-align: center;
+}
+
+.section-header {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+
+}
+
+.titulo {
+    text-align: center;
+    line-height: 1.5em;
+    color: #1944BE;
+    font-weight: 600;
+    font-size: 2em;
 }
 
 .formulario {
@@ -67,8 +86,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 55%;
-    padding: 3rem;
+    min-width: 55%;
+    padding: 1em;
     border-radius: 1.4rem;
 }
 
@@ -79,6 +98,41 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 55vw;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 2em;
+    border-radius: 1em;
+    border: 1px solid;
+    font-size: 14px;
+    padding: 4px 0 4px 10px;    
+    outline: none;
+}
+
+.input-box i {
+    position: absolute;
+    right: 37px;
+    top: 50%;
+    color: #848484;
+
+
+}
+
+.label-descricao {
+    color: #000000;
+    position: relative;
+    bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .btn-submit {
@@ -89,12 +143,33 @@ body {
     background-color: #1944BE;
 }
 
-.pergunta {
-    color: #1944BE;
-
-}
-
 
 .btn-entrar {
     font-weight: 600;
+    position: relative;
+    right: 10px;
+    width: 100%;
 }
+
+.btn-google {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 15px;
+    color: #1944BE;
+    height: 5vh;
+    border-radius: 2em;
+    background-color: #ffffff;
+}
+
+.cadastro {
+    color: aliceblue;
+}
+
+.forgot-password {
+    text-align: center;
+    font-size: 12px ;
+    color: #000000;
+
+}
+
